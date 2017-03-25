@@ -14,10 +14,6 @@ import json
 
 albert_op = os.environ.get("ALBERT_OP")
 
-f = open("/tmp/testlog", "a+")
-f.writelines(str(albert_op))
-f.close()
-
 if albert_op == "METADATA":
     metadata="""{
       "iid":"org.albert.extension.external/v2.0",
